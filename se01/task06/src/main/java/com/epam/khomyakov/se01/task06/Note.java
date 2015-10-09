@@ -4,44 +4,39 @@ import java.util.Scanner;
 
 public class Note {
 	
+	public String[] str = new String[1];
+	
 	public void addPost(){
-		Scanner in = new Scanner(System.in);
-		System.out.println("Enter post: ");
-		String c = in.nextLine();
-
+			Scanner in = new Scanner(System.in);
+			System.out.println("Enter post: ");
+			String c = in.nextLine();
+			str[0] = c;
+		
 	}
 	
-	public void seeAllPost(){
-		String[] mass = {"sss", "sssuu", "oeiw9ew9"};
-		for(int i = 0; i < mass.length; i++){
-			System.out.println(" " + i + " | Post: " + mass[i]);
+	public void seeAllPosts(){
+		for(int i = 0; i < str.length; i++){
+			System.out.println(" " + i + " | Post: " + str[i]);
 		}
 	}
 	
-	public String editPost(){
-		System.out.println("Post was edit");
-		return null;
+	public void editPost(){
+		Scanner in = new Scanner(System.in);
+		System.out.println("Edit post : " + str[0]);
+		System.out.println("Enter new post: ");
+		String n = in.nextLine();
+		str[0] = n;
+		System.out.println("Post after edit: " + str[0]);
 	}
 	
 	public void delPost(){
-		System.out.println("Post was deleted");
+		str[0] = null;
+		System.out.println("Post has been successfully removed");
 	}
 	
 	
-	public void navigation(int k){
-		if(k == 1){
-			addPost();
-		}
-		else if(k == 2){
-			seeAllPost();
-		} 
-		else if(k == 3){
-			editPost();
-		}
-		else if(k == 4){
-			delPost();
-		}
-	}
+	
+	
 
 
 }
