@@ -1,4 +1,4 @@
-package com.epam.khomyakov.se02.task3;
+package com.epam.khomyakov.se02.task4;
 
 
 
@@ -26,6 +26,7 @@ public class BeginnerSet extends Stationery {
 	public String toString(){
 		return String.format("Name : " + getName() + " Cost : " + getCost());
 	}
+
 
 }
 
