@@ -1,5 +1,13 @@
 package com.epam.khomyakov.se02.task6;
 
+/**
+ * 
+ * @author Khomyakov_Artyom
+ *
+ */
+
+
+@About(comments = "Submarine Class", date = "23.10.2015")
 public class Submarine {
 	
 	Engine engine = new Engine();
