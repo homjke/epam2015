@@ -24,7 +24,10 @@ public class Stationery {
 		this.cost = cost;
 	}
 	
-
+	@Override 
+	public String toString(){
+		return String.format("Name : %s, Cost : %s", name, cost);
+	}
 	
 	
 	

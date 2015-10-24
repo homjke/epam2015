@@ -22,10 +22,6 @@ public class BeginnerSet extends Stationery {
 		System.out.println("This is Beginner Set. ");
 	}
 	
-	@Override 
-	public String toString(){
-		return String.format("Name : " + getName() + " Cost : " + getCost());
-	}
 
 }
 

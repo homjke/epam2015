@@ -20,9 +20,5 @@ public class StandardSet extends Stationery {
 		System.out.println("This is Standard set");
 	}
 	
-	@Override 
-	public String toString(){
-		return String.format("Name : " + getName() + " Cost : " + getCost());
-	}
 
 }

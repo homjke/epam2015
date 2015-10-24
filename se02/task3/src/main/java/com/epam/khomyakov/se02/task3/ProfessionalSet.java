@@ -20,9 +20,6 @@ public class ProfessionalSet extends Stationery {
 		System.out.println("This is Professional set");
 	}
 	
-	@Override 
-	public String toString(){
-		return String.format("Name : " + getName() + " Cost : " + getCost());
-	}
+	
 
 }
