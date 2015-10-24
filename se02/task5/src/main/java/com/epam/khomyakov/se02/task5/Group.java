@@ -5,6 +5,18 @@ public class Group {
 	private String nameGroup;
 	
 	private int idGroup;
+	
+	private Discipline discipline;
+	
+	
+
+	public Discipline getDiscipline() {
+		return discipline;
+	}
+
+	public void setDiscipline(Discipline discipline) {
+		this.discipline = discipline;
+	}
 
 	public String getNameGroup() {
 		return nameGroup;
@@ -22,14 +34,15 @@ public class Group {
 		this.idGroup = idGroup;
 	}
 	
-	Group(int idGroup, String nameGroup){
+	Group(int idGroup, String nameGroup, Discipline discpipline){
 		this.idGroup = idGroup;
 		this.nameGroup = nameGroup;
+		this.discipline = discpipline;
 	}
 	
 	@Override
 	public String toString(){
-		return String.format("Group ID : " + getIdGroup() + " , " + "Name group : " + getNameGroup());
+		return String.format("Group ID : %s, Name group : %s, Discipline study : %s", idGroup, nameGroup, discipline);
 	}
 	
 

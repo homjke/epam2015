@@ -1,10 +1,15 @@
 package com.epam.khomyakov.se02.task5;
 
-public class Student {
+public class Student<T> {
+	
+	T mark; 
 	
 	private String name;
 	
 	private int idStudent;
+	
+	
+	
 
 	public int getIdStudent() {
 		return idStudent;
@@ -26,17 +31,26 @@ public class Student {
 		
 	}
 	
-	Student(int idStudent, String name){
+	Student(int idStudent, String name, T mark){
 		
 		this.idStudent = idStudent;
 		this.name = name;
+		this.mark = mark;
 		
 		
 	}
 	
+	 Student(T o) {
+	        mark = o;
+	    }
+	 
+	 T getMark() {
+	        return mark;
+	    }
+	
 	@Override
 	public String toString(){
-		return String.format("Student ID : " + getIdStudent() + " , " + "Name : " + getName());
+		return String.format("Student ID : %s, Name : %s", idStudent, name);
 	}
 
 }

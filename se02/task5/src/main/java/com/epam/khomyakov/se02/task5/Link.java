@@ -1,11 +1,12 @@
 package com.epam.khomyakov.se02.task5;
 
-public class Link {
+public class Link extends Student{
 	
 	
 	private int idStudent;
 	
 	private int idGroup;
+	
 
 	public int getIdStudent() {
 		return idStudent;
@@ -42,7 +43,7 @@ public class Link {
 	
 	@Override
 	public String toString(){
-		return String.format("Student : " + getIdStudent() + " , " + "consists a group : " + getIdGroup());
+		return String.format("Student : %s, consists a group : %s", idStudent, idGroup);
 	}
 	
 	
