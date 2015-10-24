@@ -25,7 +25,10 @@ public class Stationery {
 	}
 	
 
-	
+	@Override 
+	public String toString(){
+		return String.format("Name : %s, Cost : %s", name, cost);
+	}
 	
 	
 

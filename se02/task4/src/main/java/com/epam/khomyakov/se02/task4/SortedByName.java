@@ -2,6 +2,11 @@ package com.epam.khomyakov.se02.task4;
 
 import java.util.Comparator;
 
+/**
+ * 
+ * @author Khomyakov_Artyom
+ *
+ */
 public class SortedByName implements Comparator<BeginnerSet>{
 
 	@Override
