@@ -2,9 +2,12 @@ package com.epam.khomyakov.se03.task_1;
 
 import java.util.Scanner;
 
+import org.apache.commons.lang3.StringUtils;
+
 
 public class CrazyLogger {
 
+	StringUtils st = new StringUtils();
 
 	public static StringBuilder str = new StringBuilder();
 	
@@ -12,7 +15,7 @@ public class CrazyLogger {
 		System.out.println("Enter string for search : ");
 		Scanner in = new Scanner(System.in);
 		String s = in.nextLine();		
-		int n = str.indexOf(s);
+		int n =  StringUtils.indexOfIgnoreCase(str, s);
 		int m = str.indexOf(";", n);	
 		System.out.println(str.substring(n, m));	
 		
@@ -26,10 +29,10 @@ public class CrazyLogger {
 		System.out.println("To : ");
 		Scanner in = new Scanner(System.in);
 		String s2 = in.nextLine();	
-		int n = str.indexOf(s2);
+		int n =  StringUtils.indexOfIgnoreCase(str, s2);
 		System.out.println("Search string from : ");
 		String s = in.nextLine();
-		int m = str.indexOf(s);
+		int m =  StringUtils.indexOfIgnoreCase(str, s);
 		System.out.println(str.substring(m,n));
 	}
 
@@ -67,6 +70,7 @@ public class CrazyLogger {
 		default : break;
 		
 		}
+		
 		
 		
 		
